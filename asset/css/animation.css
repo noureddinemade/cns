@@ -1,0 +1,17 @@
+@keyframes logo {
+
+    0%          { background-color: var(--brand-loop-1); }
+    8.333%      { background-color: var(--brand-loop-2); }
+    16.667%     { background-color: var(--brand-loop-3); }
+    25%         { background-color: var(--brand-loop-4); }
+    33.333%     { background-color: var(--brand-loop-5); }
+    41.667%     { background-color: var(--brand-loop-6); }
+    50%         { background-color: var(--brand-loop-7); }
+    58.333%     { background-color: var(--brand-loop-8); }
+    66.667%     { background-color: var(--brand-loop-9); }
+    75%         { background-color: var(--brand-loop-10); }
+    83.333%     { background-color: var(--brand-loop-11); }
+    91.667%     { background-color: var(--brand-loop-12); }
+    100%        { background-color: var(--brand-loop-1); }
+    
+}

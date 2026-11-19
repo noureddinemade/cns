@@ -1,0 +1,114 @@
+@import "reset.css";
+@import "font.css";
+@import "animation.css";
+
+:root {
+
+    --bg: #1d1d1d;
+    --text: #e9e9e9;
+
+    --brand: #ffb85f;
+    --brand-loop-1: #ff5f5f;
+    --brand-loop-2: #ffa05f;
+    --brand-loop-3: #ffe25f;
+    --brand-loop-4: #cbff5f;
+    --brand-loop-5: #6dff5f;
+    --brand-loop-6: #5fffaa;
+    --brand-loop-7: #5ffffa;
+    --brand-loop-8: #5fafff;
+    --brand-loop-9: #5f6dff;
+    --brand-loop-10: #b85fff;
+    --brand-loop-11: #f05fff;
+    --brand-loop-12: #ff5fc6;
+
+    --font-family: "Ingram Mono";
+    --font-base: 16px;
+
+}
+
+html, body {
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-family), monospace;
+    font-size: var(--font-base);
+    margin: 0;
+    padding: 0;
+
+    * { box-sizing: border-box; }
+
+}
+
+main {
+
+    width: 100vw;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: clamp(16px, 6vw, 64px);
+    gap: clamp(16px, 4vw, 44px);
+
+    a {
+        text-decoration: none;
+        color: var(--brand);
+    }
+
+    header {
+
+        a.logo {
+
+            color: transparent;
+            font-size: 0rem;
+            display: block;
+            width: clamp(85px,20vw,124px);
+            height: 116px;
+            background-color: var(--brand-loop-1);
+            mask-image: url(../img/logo/cns-logo.svg);
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: 100%;
+            animation: logo 5s linear infinite;
+
+        }
+
+    }
+
+    div.content {
+
+        flex-grow: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(8px, 2.5vw, 32px);
+
+        p {
+
+            font-size: clamp(1rem, 4vw, 1.4rem);
+            line-height: 1.5;
+
+            a {
+                color: var(--brand);
+                text-decoration: underline;
+            }
+
+            span {
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: rgba(255,255,255,.3);
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        p { font-size: 0.9rem; }
+
+    }
+
+}
